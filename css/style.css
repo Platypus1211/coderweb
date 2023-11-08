@@ -1,0 +1,282 @@
+/*Colores
+Umber (soft brown): #6B594D
+Softer brown: #a28f83
+Coffee (dark brown): #5E4330
+Floral White: #F7F4EA
+Periwinkle - Slate blue: #6A5ACD
+*/
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header>nav>ul>li>a{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #6a5acd;
+    font-size: 22px;
+}
+header>nav>ul>li>a:hover{
+    font-family: 'Montserrat';
+    text-decoration: underline;
+    color: #6a5acd;
+    font-size: 23px;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+nav{
+    width: 90%;
+    height: 150px;
+    margin: 5px 10px;
+
+}
+header>a>img{
+    height: 150px;
+    margin: 5px 10px;
+}
+header{
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+/*Fuente Titulos H1*/
+h1{
+    color:#6a5acd;
+    font-family: 'Montserrat';
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+/*Banner INDEX*/
+.banner{
+    text-align: center;
+    background-image: url(../assets/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 294px;
+}
+.innerBanner{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: large;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+/*Secciones Contacto*/
+.contacto{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #a28f83;
+    text-align: center;
+    font-size: xx-large;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;    
+    justify-content: space-evenly;
+}
+.contacto>h2{
+    justify-content:center;
+    align-items: center;
+}
+.logoAgenda{
+    background-color: #6a5acd;
+    height: 50px;
+    width: 7,5%;
+}
+.mensaje{
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+/*Seccion Location INDEX*/
+.villaCrespo{
+    color:#6a5acd;
+    font-family: 'Montserrat';
+    padding-bottom: 20px;
+}
+.mapa{
+    text-align: center;
+}
+
+/*Banner Presentacion INDEX*/
+.presentacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannerMultiple{
+    background-color: #a28f83;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 30%;
+    margin: 20px;
+    text-align: justify;
+    padding: 20px 20px;
+}
+
+/*Imagenes*/
+.imagenesPresentacion{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.imagenesBiblioteca{
+    text-align: center;
+}
+.imagenesBiblioteca>div>img{
+    width: 50%;
+}
+.imagenesLudoteca{
+    text-align: center;
+}
+.imagenesLudoteca>div>img{
+    width: 50%;
+}
+
+/*Grid*/
+.parentGrid img{
+    width: 100%;
+    height: 100%;
+}
+.parentGrid{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "logo    coffee      img1       img3"
+    "logo    parrafo    parrafo    parrafo"
+    "img2    parrafo    parrafo    parrafo"
+    "img7     img8       img5       img6";
+
+    grid-template-columns: 23% 16% 24% 26%;
+    grid-template-rows: 190px 100px 190px 200px;
+    row-gap: 2px;
+    column-gap: 2px;
+    margin-bottom: 30px;
+}
+.logo{
+    grid-area: logo;
+}
+.parrafo{
+    grid-area: parrafo;
+    margin: 10px;
+}
+.coffee{
+    grid-area: coffee;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+
+/*FormatoParrafos*/
+p{
+    margin: 10px 20px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+/*Footer*/
+footer{
+    padding: 10px;
+    background-color: #a28f83;
+    display: flex;
+    margin-top: 30px;
+}
+.chatbot{
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    height: 90px;
+    width: 1,5%;    
+    justify-content: right;
+    z-index: 1;
+}
+footer>div>a>img{
+    height: 40px;
+    width: 1,5%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+h6{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.copyright{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+footer>div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 80%;
+}
+
+?
+/*Mobile*/
+@media only screen and (max-width:500px)
+{
+    nav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .parentGrid{
+        grid-template-areas: 
+        "logo"
+        "coffee"      
+        "img1"
+        "img3"
+        "parrafo"
+        "img2"
+        "img7"     
+        "img8"       
+        "img5"       
+        "img6";
+    
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(4, 50px);
+        row-gap: 2px;
+        margin-bottom: 30px;
+    }
+}
