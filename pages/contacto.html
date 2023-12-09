@@ -6,76 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Avalon | Turnos - Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <!--Encabezado-->
     <header>
-        <!--Logo-->
-        <a href="../index.html"> <img src="../assets/logo.png" alt="Logo"></a>
-        <nav> <!--Menu de navegacion-->
-            <ul>
-                <li>
-                    <a href="../index.html#presentacion">Conocenos
-                    </a>
-                </li>
-                <li>
-                    <a href="./cafeteria.html">Cafetería
-                    </a>
-                </li>
-                <li>
-                    <a href="./biblioteca.html">Biblioteca&#47;Librería
-                    </a>
-                </li>
-                <li>
-                    <a href="./ludoteca.html">Ludoteca&#47;Juguetería
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Contacto
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <!--Menú de navegación-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <!--Logo-->
+              <a class="navbar-brand" href="#" ><img src="../assets/logo.png" alt="Logo" width="100" height="100"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class ="navbar-nav justify-content-between">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Conocenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cafeteria.html">Cafetería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./biblioteca.html">Biblioteca&#47;Librería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ludoteca.html">Ludoteca&#47;Juguetería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
+    <main class="container">
         <h1>CONTACTO</h1>
         <!--Presentación del sistema de turnos -->
         <section class="turnos">
             <p>Si bien en la cafetería y la biblioteca aceptamos clientes por orden de llegada, para grupos grandes es recomendable reservar. El servicio de ludoteca funciona con un sistema de reserva <strong>con seña</strong> para asegurar la disponibilidad de mesas, aunque si se cae una reserva recibimos clientes en puerta.</p>
         </section>
         <!--Sección que redirige a una agenda externa al sitio-->
-        <section class="contacto">
-            <h2>Sacá tu turno</h2>
-            <h3>y vení a conocernos.</h3>
-            <a 
-                href="https://www.meitre.com"> <img class="logoAgenda" src="../assets/agenda.png" alt="Sacá tu turno">
-            </a>
-        </section>
-        <br>
-        <!--Sección con formulario para contactarse-->
-        <section class="mensaje">
-            <h2>Dejanos un mensaje</h2>
-            <h4>si necesitás una reserva más grande que la que permite la agenda, o querés comunicarte con nosotrxs.</h4>
-            <form action="" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="">
-                </div>
-                <div>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" name="mail" id="">
-                </div>
-                <div>
-                    <label for="phone">Teléfono:</label>
-                    <input type="tel" name="phone" id="">
-                </div>
-                <label for="message">Mensaje:</label>
-                <textarea name="message" id="" cols="30" rows="10"></textarea>
-                <div>
-                    <input type="button" value="Enviar">
-                </div>
-            </form>
-        </section>
+        <div class="container">
+            <div class="row">
+                <section class="col-sm-12 col-md-8 col-lg-6" class="contacto">
+                    <h2>Sacá tu turno</h2>
+                    <h3>y vení a conocernos.</h3>
+                    <a 
+                        href="https://www.meitre.com"> <img class="logoAgenda" src="../assets/agenda.png" alt="Sacá tu turno">
+                    </a>
+                </section>
+                <br>
+                <!--Sección con formulario para contactarse-->
+                <section class="col-sm-12 col-md-8 col-lg-6" class="mensaje">
+                    <h2>Dejanos un mensaje</h2>
+                    <h4>si necesitás una reserva más grande que la que permite la agenda, o querés comunicarte con nosotrxs.</h4>
+                    <form action="" method="post">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="">
+                        </div>
+                        <div>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" name="mail" id="">
+                        </div>
+                        <div>
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" name="phone" id="">
+                        </div>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <div>
+                            <input type="button" value="Enviar">
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        
         <!--Bot-->
         <a href="https://www.instagram.com"> <img class="chatbot" src="../assets/chatbot.png" alt="Chatbot Icon"></a>
     </main>
@@ -90,5 +99,6 @@
             <a href="https://www.x.com"> <img src="../assets/logox.png" alt="Logo X"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

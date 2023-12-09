@@ -16,25 +16,29 @@ Periwinkle - Slate blue: #6A5ACD
 }
 
 /*Header*/
-header>nav>ul>li>a{
+header>nav>div>div>ul>li>a{
     font-family: 'Montserrat';
     text-decoration: none;
-    color: #6a5acd;
+    color: #6a5acd !important;
     font-size: 22px;
 }
-header>nav>ul>li>a:hover{
+header>nav>div>div>ul>li>a:hover{
     font-family: 'Montserrat';
     text-decoration: underline;
-    color: #6a5acd;
-    font-size: 23px;
+    color: #6a5acd !important;
+    font-size: 18px;
 
+}
+header>nav>div{
+    background-color: white !important;
 }
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex: 1;
     align-items: center;
     height: 150px;
+
 }
 nav{
     width: 90%;
@@ -42,12 +46,8 @@ nav{
     margin: 5px 10px;
 
 }
-header>a>img{
-    height: 150px;
-    margin: 5px 10px;
-}
 header{
-    background-color: white;
+    background-color: white !important;
     display: flex;
     position: sticky;
     top: 0px;
@@ -135,6 +135,11 @@ h1{
 
 /*Imagenes*/
 .imagenesPresentacion{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.imagenesPresentacion:hover{
     display: flex;
     width: 100%;
     margin-bottom: 15px;
@@ -253,7 +258,6 @@ footer>div{
     width: 80%;
 }
 
-?
 /*Mobile*/
 @media only screen and (max-width:500px)
 {
