@@ -262,6 +262,8 @@ footer>div{
     .parentGrid{
         grid-template-areas: 
         "logo"
+        "logo"
+        "coffee"
         "coffee"
         "img1"
         "img3"
@@ -272,8 +274,26 @@ footer>div{
         "img5"
         "img6";
         grid-template-columns: 90%;
-        grid-template-rows: repeat(4, 50px);
         row-gap: 2px;
         margin-bottom: 30px;
+        height: auto;
     }
+    .mapa iframe {
+        width: 100%;
+        height: auto;
+      }
+    .row{
+        padding: 50px;
+    }
+    .card{
+        margin-bottom: 25px;
+    }
+    footer>div>h6 {
+        display: none;
+        visibility: hidden;
+    }
+    .copyright {
+        margin: 0;
+        padding: 10px;
+      }
 }
